@@ -1,0 +1,111 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.section-title {
+    margin: 0;
+    padding-bottom: 4px;
+    width: 100%;
+    border-bottom: 2px solid #ececec;
+    font-weight: 800;
+    color: #100c35;
+}
+
+.item-with-date {
+    display: flex;
+}
+
+.content-container {
+    margin-left: 30px;
+}
+
+.date-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 2px solid #e0b27de7;
+    padding-right: 30px;
+    position: relative;
+}
+
+.item-date {
+    position: relative;
+    min-width: 74px;
+    min-height: 29px;
+    width: 74px;
+    height: 30px;
+}
+
+.date-text-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.date-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: #100c35;
+    margin: 0 0 0 6px;
+}
+
+.start-date {
+    margin-bottom: 16px;
+}
+
+.date-pointer {
+    position: absolute;
+    top: 9px;
+    right: -7px;
+}
+
+.date-pointer-bottom {
+    position: absolute;
+    bottom: 22px;
+    right: -7px;
+}
+
+.fake-date-background {
+    top: 0;
+    background-color: #f7f7f7;
+    height: 9px;
+    width: 10px;
+}
+
+.fake-bottom-date-background {
+    position: absolute;
+    bottom: -9px;
+    right: -6px;
+    background-color: #f7f7f7;
+    height: 31px;
+    width: 10px;
+    z-index: 3;
+}
+
+.sticky-date {
+    height: 100%;
+    width: 100%;
+}
+
+
+.sub-title {
+    color: #e0b27de7;
+    margin: 0px;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: italic;
+}
