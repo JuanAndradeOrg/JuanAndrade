@@ -12,8 +12,8 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route path="/resume" component={Resume}/>
-          <Route exact path="/projects" component={projectsView}/>
+          <Route exact path={process.env.PUBLIC_URL +'/resume'} component={Resume}/>
+          <Route exact path={process.env.PUBLIC_URL +'/'} component={projectsView}/>
         </Switch>
       </Router>
     </div>
