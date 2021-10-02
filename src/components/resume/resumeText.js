@@ -5,7 +5,7 @@ export const Summary = {
     + "technologies such as Javascript, Java, SQL, React.js, Angular.js, Vue.js, Spring, and Python. "
     + "Responsible, proactive and ethical person with skills for collaborative work and continuous "
     + "improvement. Interested in working on big challenges and innovation, as well as creating quality software "
-    + "thas has a great impact on its users."
+    + "that has a great impact on its users."
 };
 
 export const WorkExperience = {
