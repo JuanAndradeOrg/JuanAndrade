@@ -8,6 +8,10 @@ function App() {
     <UnityPlayer projectName="rabbit" isVisible />
   );
 
+  const journey = () => (
+    <UnityPlayer projectName="journey" isVisible />
+  );
+
 
   return (
     <div className="App">
@@ -15,6 +19,7 @@ function App() {
         <Switch>
           <Route exact path="/resume" component={Resume}/>
           <Route exact path="/" component={projectsView}/>
+          <Route exact path="/journey" component={journey}/>
         </Switch>
       </Router>
     </div>
