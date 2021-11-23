@@ -1,9 +1,10 @@
 .App {
-  background-color: #d7d9da;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  background-color: #d7d9da;
+  position: relative;
 }
 
 h1 {

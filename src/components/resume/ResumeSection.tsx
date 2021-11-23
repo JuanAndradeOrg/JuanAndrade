@@ -19,8 +19,8 @@ type IResumeSectionItem = {
 
 export function ResumeSection(props: IResumeSection) {
     const { title, mainText, sectionItems } = props;
-    const sectionItemsElements = sectionItems?  sectionItems.map((sectionItem, sectionIndex) => (
-        <li className={sectionItem.finalDate ? 'item-with-date': ''}>
+    const sectionItemElements = sectionItems?  sectionItems.map((sectionItem, sectionIndex) => (
+        <li key={title + sectionIndex.toString() } className={sectionItem.finalDate ? 'item-with-date': ''}>
             { sectionItem.finalDate && (
                 <div className="date-container">
                     <div className="item-date">
@@ -59,7 +59,7 @@ export function ResumeSection(props: IResumeSection) {
         <div className="section-container">
             <h3 className="section-title">{title}</h3>
             {mainText && <p>{mainText}</p>}
-            {sectionItems && <ul className="section-item">{sectionItemsElements}</ul>}
+            {sectionItems && <ul className="section-item">{sectionItemElements}</ul>}
         </div>
     );
 }

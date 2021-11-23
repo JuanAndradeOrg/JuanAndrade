@@ -1,5 +1,5 @@
 .floating-resume {
-    margin: 40px;
+    margin: 120px 40px 40px 40px;
     box-shadow: 0px 2px 8px 6px rgba(0,0,0,0.1);
     -webkit-box-shadow: 0px 2px 8px 6px rgba(0,0,0,0.1);
     -moz-box-shadow: 0px 2px 8px 6px rgba(0,0,0,0.1);
@@ -9,7 +9,7 @@
 
 .resume-intro {
     padding: 30px;
-    background-image: url("../../utility/new-york.png");
+    background-image: url("../../utility/landscape.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
@@ -20,6 +20,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 @media only screen and (max-width: 800px) {
@@ -91,12 +92,23 @@
 }
 
 .main-title {
-    color: #e7e5e5fd;
+    color: #f9f9f9;
     margin-bottom: 30px;
 }
 
 .resume-sub-title {
-    color: #e7e5e5fd;
+    color: #f9f9f9;
     padding: 10px;
     border: 2px solid #da984de7;
+}
+
+.download-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: #e0b27de7;
+    border-radius: 4px;
 }

@@ -1,25 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
-import { UnityPlayer } from './components/unity/UnityPlayer';
+import { Portafolio } from './components/portafolio/Portafolio';
 import { Resume } from './components/resume/Resume';
+import { NavBar } from './components/navigation/NavBar';
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 function App() {
-  const projectsView = () => (
-    <UnityPlayer projectName="rabbit" isVisible />
+  const [activeTab, setActiveTab] = useState('projects');
+  const activateTab = (tab: String) => {setActiveTab(tab.toString())}
+  const resume = () => (
+    <Resume activateTab={activateTab} />
   );
 
-  const journey = () => (
-    <UnityPlayer projectName="journey" isVisible />
+  const portafolio = () => (
+    <Portafolio activateTab={activateTab} />
   );
-
 
   return (
     <div className="App">
       <Router basename={process.env.PUBLIC_URL}>
+        <NavBar activeTab={activeTab} />
         <Switch>
-          <Route exact path="/resume" component={Resume}/>
-          <Route exact path="/" component={projectsView}/>
-          <Route exact path="/journey" component={journey}/>
+          <Route exact path="/resume" component={resume}/>
+          <Route exact path="/" component={portafolio}/>
         </Switch>
       </Router>
     </div>
