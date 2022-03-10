@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/JuanAndrade/static/css/main.6dc3c47a.chunk.css",
-    "main.js": "/JuanAndrade/static/js/main.80f5fe8b.chunk.js",
-    "main.js.map": "/JuanAndrade/static/js/main.80f5fe8b.chunk.js.map",
+    "main.js": "/JuanAndrade/static/js/main.689e5028.chunk.js",
+    "main.js.map": "/JuanAndrade/static/js/main.689e5028.chunk.js.map",
     "runtime-main.js": "/JuanAndrade/static/js/runtime-main.70a7604e.js",
     "runtime-main.js.map": "/JuanAndrade/static/js/runtime-main.70a7604e.js.map",
     "static/js/2.6e9980c2.chunk.js": "/JuanAndrade/static/js/2.6e9980c2.chunk.js",
@@ -12,7 +12,7 @@
     "index.html": "/JuanAndrade/index.html",
     "static/css/main.6dc3c47a.chunk.css.map": "/JuanAndrade/static/css/main.6dc3c47a.chunk.css.map",
     "static/js/2.6e9980c2.chunk.js.LICENSE.txt": "/JuanAndrade/static/js/2.6e9980c2.chunk.js.LICENSE.txt",
-    "static/media/AndradeResume.70d913a0.pdf": "/JuanAndrade/static/media/AndradeResume.70d913a0.pdf",
+    "static/media/AndradeResume.fe84480b.pdf": "/JuanAndrade/static/media/AndradeResume.fe84480b.pdf",
     "static/media/date-sticky.e38cbf18.png": "/JuanAndrade/static/media/date-sticky.e38cbf18.png",
     "static/media/resume.css": "/JuanAndrade/static/media/landscape.b1c53eb1.png",
     "static/media/photo.51420dd0.jpg": "/JuanAndrade/static/media/photo.51420dd0.jpg"
@@ -21,6 +21,6 @@
     "static/js/runtime-main.70a7604e.js",
     "static/js/2.6e9980c2.chunk.js",
     "static/css/main.6dc3c47a.chunk.css",
-    "static/js/main.80f5fe8b.chunk.js"
+    "static/js/main.689e5028.chunk.js"
   ]
 }
