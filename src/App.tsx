@@ -8,7 +8,9 @@ function App() {
   const [activeTab, setActiveTab] = useState('projects');
   const activateTab = (tab: String) => {setActiveTab(tab.toString())}
   const resume = () => (
-    <Resume activateTab={activateTab} />
+    <div className="floating-resume">
+      <Resume activateTab={activateTab} />
+    </div>
   );
 
   const portafolio = () => (

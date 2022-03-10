@@ -44,8 +44,8 @@ export const WorkExperience = {
             title: "Digital Psychology Solutions",
             subTitle: "Database Designer and Developer",
             content: "Design of the class diagram and development of the technical service database of the company with MySQL.",
-            finalDate: "Nov 2016",
-            startDate: "Aug 2016",
+            finalDate: "Dec 2016",
+            startDate: "Jun 2016",
         },
     ],
 };
@@ -56,7 +56,7 @@ export const Education = {
         {
             title: "Bachelor of Computer Systems Engineering",
             content: "Colombian School of Engineering Julio Garavito",
-            finalDate: "Sep 2019",
+            finalDate: "Jun 2019",
         },
         {
             title: "International Baccalaureate Diploma",

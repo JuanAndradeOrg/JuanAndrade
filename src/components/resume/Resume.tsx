@@ -3,18 +3,31 @@ import './resume.css';
 import { ResumeSection } from './ResumeSection';
 import * as ResumeText from './resumeText';
 import profilePicture from '../../utility/photo.jpg';
-import resumePDF from '../../utility/resume.pdf';
+import resumePDF from '../../utility/AndradeResume.pdf';
 import DownloadIcon from '@mui/icons-material/Download';
 import { IconButton } from '@mui/material';
 // import jsPDF from 'jspdf';
 // import html2canvas from 'html2canvas';
+import ReactDOMServer from "react-dom/server";
+import jsPDF from 'jspdf';
+import { savePDF } from '@progress/kendo-react-pdf';
 
 type IResume = {
     activateTab?: (tab: String) => void;
 }
 
 export function Resume(props: IResume) {
-    /* const generatePDF = () => {
+    const {activateTab} = props;
+    const resumeRef: any = React.createRef();
+
+    const generatePDF = () => {
+        savePDF(resumeRef.current, { 
+            paperSize: 'A4',
+            fileName: 'AndradeResume.pdf',
+            keepTogether:'#resume',
+            scale: 0.444
+        });
+        /* 
             const input: HTMLElement = document.getElementById('resume')!;
             html2canvas(input)
               .then((canvas) => {
@@ -26,13 +39,16 @@ export function Resume(props: IResume) {
                 pdf.addImage(imgData, 'PNG', 0, 0, width, height);
                 pdf.save("download.pdf");
               });
-    } */
-    if (props.activateTab) {
-        props.activateTab('resume');
+        */
+    } 
+
+    if (activateTab) {
+        activateTab('resume');
     }
 
+
     return (
-        <div className="floating-resume" id="resume">
+        <div  id="resume" ref={resumeRef}>
             <div className="resume-intro">
                 <h1 className="main-title">JUAN JOSE ANDRADE PARDO</h1>
                 <div className="resume-sub-title">
