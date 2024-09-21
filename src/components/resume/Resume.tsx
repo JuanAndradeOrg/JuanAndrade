@@ -12,12 +12,8 @@ import ReactDOMServer from "react-dom/server";
 import jsPDF from 'jspdf';
 import { savePDF } from '@progress/kendo-react-pdf';
 
-type IResume = {
-    activateTab?: (tab: String) => void;
-}
 
-export function Resume(props: IResume) {
-    const {activateTab} = props;
+export function Resume() {
     const resumeRef: any = React.createRef();
 
     const generatePDF = () => {
@@ -41,11 +37,6 @@ export function Resume(props: IResume) {
               });
         */
     } 
-
-    if (activateTab) {
-        activateTab('resume');
-    }
-
 
     return (
         <div  id="resume" ref={resumeRef}>
