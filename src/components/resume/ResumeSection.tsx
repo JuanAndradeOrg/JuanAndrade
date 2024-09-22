@@ -15,6 +15,7 @@ type IResumeSectionItem = {
     finalDate?: String;
     startDate?: String;
     subItems?: Array<String>;
+    keyPoints?: Array<String>;
 }
 
 export function ResumeSection(props: IResumeSection) {
@@ -51,6 +52,16 @@ export function ResumeSection(props: IResumeSection) {
                 {sectionItem.subTitle && <p className="sub-title">{sectionItem.subTitle}</p>}
                 {sectionItem.content && <p>{sectionItem.content}</p>}
                 {sectionItem.subItems ? sectionItem.subItems.map((sectionSubItem) => <p>{sectionSubItem}</p>) : <></>}
+                {sectionItem.keyPoints ? 
+                    (<ul className="resume-section-key-points"> {
+                        sectionItem.keyPoints.map(
+                            (sectionkeyPoint, index) => 
+                            <li key={`keyPoint${index}`}>
+                                <p>{sectionkeyPoint}</p>
+                            </li>
+                        )}
+                    </ul>) : <></>
+                }
             </div>
         </li>
     )) : <></>;

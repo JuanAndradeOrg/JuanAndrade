@@ -66,10 +66,6 @@ export function Resume() {
                         sectionItems={ResumeText.Skills.sectionItems}
                     />
                     <ResumeSection 
-                        title={ResumeText.Languages.title}
-                        sectionItems={ResumeText.Languages.sectionItems}
-                    />
-                    <ResumeSection 
                         title={ResumeText.Certifications.title}
                         sectionItems={ResumeText.Certifications.sectionItems}
                     />

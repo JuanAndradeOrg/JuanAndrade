@@ -1,51 +1,55 @@
 export const Summary = {
     title: "Summary",
-    mainText: "Software Engineer with experience in design and development of quality "
-    + "software using agile development methodologies. Proficiency in FrontEnd and BackEnd "
-    + "technologies such as Javascript, Java, SQL, React.js, Angular.js, Vue.js, Spring, and Python. "
-    + "Responsible, proactive and ethical person with skills for collaborative work and continuous "
-    + "improvement. Interested in working on big challenges and innovation, as well as creating quality software "
-    + "that has a great impact on its users."
+    mainText: "Full stack software Engineer with +5 years of experience building large-scale, highly-available, distributed software systems in the cloud. "
+    + "Proficiency in FrontEnd and BackEnd technologies such as Java, Javascript, SQL, React.js, Angular.js, Vue.js, and Python. "
+    + "Experience designing, scoping, and implementing new product features and integrations resulting in reliable software products. "
+    + "Well-versed in service-oriented architecture, software development life cycle (SDLC), continuous integration and deployment (CI/CD) pipelines, and operational best practices."
 };
 
 export const WorkExperience = {
     title: "Work Experience",
     sectionItems: [
         {   
-            title: "Scotiabank",
-            subTitle: "Full Stack Software Engineer Specialist",
-            content: "Full Stack software development for the ScotiaHome product (Application that manages Scotiabank mortgages in Canada). Currently I work creating new features for the product under the Scrum methodology, involving Backend development with the JAX-RS Java framework and FrontEnd development with the Javascript framework Knockout.js.",
+            title: "Amazon",
+            subTitle: "Software Development Engineer",
+            content: "Full stack software development for Amazon Business Registration team.",
             finalDate: "Current",
-            subItems: ["Lastly, I have also worked as a tutor in an internal Scotiabank bootCamp on Java and FrontEnd development."],
+            keyPoints: [
+                "Designed and implemented the feature that allowed Public sector customers to register into Amazon Business.",
+                "Created and designed Load tests for Amazon Business registration website and integrated them as approval workflow of pipeline.",
+                "Lead and designed a project for migrating notification service used for sending emails and SMS to customers.",
+                "Migrated infrastructure for exporting registration information to Amazon DataWarehouse ecosystem to a different AWS account using CDK.",
+            ],
+        },
+        {   
+            title: "Scotiabank",
+            subTitle: "Full Stack Software Engineer Specialist.",
+            content: "Full Stack software development for the ScotiaHome product (Application that manages Scotiabank mortgages in Canada).",
+            finalDate: "Aug 2022",
+            keyPoints: [
+                "Lead a project that simplified the process of verifying and selecting customer addresses in ScotiaHome. Only preverified and real addresses were shown to financial advisors.",
+                "Served as professor in internal Scotiabank bootCamp, teaching programming to people in non technical roles.",
+            ],
         },
         {   
             title: "Blackboard",
             subTitle: "Associate Software Engineer",
-            content: "Full stack software development for the Learn/Ultra product. I worked with my team mostly on creating new features and migrating Angular.js features to React libraries. I led a project that improved the performance of Ultra’s course outline (page that shows the content of a course) by more than 30%. Each project involves performance automated testing, internationalization and accessibility.",
+            content: "Full stack software development for the Learn/Ultra product.",
             finalDate: "Apr 2021",
             startDate: "Nov 2019",
-            subItems: ["Technologies: React, Angular Js, Java, Python, Spring (MVC, REST), TypeScript, Junit, Jest, Sass, Seleniumweb driver, PostgreSQL.", "Development methodologies: Scrum, Continuous Integration (CI)."],
+            keyPoints: [
+                "Lead a project that improved the performance of Learn - Ultra course outline (page that shows the content of a course to students) by more than 30%.",
+                "Wrote several automated E2E tests for improving Ultra’s product resilience.",
+                "Worked on creating rubric evaluation system used today by Ultra customers."
+            ],
         },
         {   
             title: "FusePong",
-            subTitle: "Full Stack Developer",
+            subTitle: "Full Stack  Software Engineer",
             content: "Design and development of reliable REST API’s using Ruby On Rails Framework and PostgreSQL. Creation of Responsive & Interactive websites based on Vue.js framework and Sass. Management of AWS Cloud EC2 servers and S3 buckets to deploy applications.",
             finalDate: "Jul 2019",
             startDate: "Nov 2018",
-        },
-        {   
-            title: "Colombian School of Engineering Julio Garavito",
-            subTitle: "Introduction to Computer Systems Engineering Academic Monitor",
-            content: "Grade workshops and assist students on topics about basic programming theory and analysis of business structure.",
-            finalDate: "Dec 2018",
-            startDate: "Aug 2018",
-        },
-        {   
-            title: "Digital Psychology Solutions",
-            subTitle: "Database Designer and Developer",
-            content: "Design of the class diagram and development of the technical service database of the company with MySQL.",
-            finalDate: "Dec 2016",
-            startDate: "Jun 2016",
+            keyPoints: [],
         },
     ],
 };
@@ -98,7 +102,7 @@ export const ContactInfo = {
     sectionItems: [
         {
             title: "Phone",
-            content: "+57 3014454381",
+            content: "+34 625991715",
         },
         {
             title: "Mail",
@@ -119,15 +123,11 @@ export const Skills = {
     sectionItems: [
         {
             title: "Languages & Frameworks:",
-            content: "JavaScript, Java, Python, SQL, React.js, Vue.js, Angular.js, HTML, CSS, SASS, C++,TypeScript.",
+            content: "Java, JavaScript, Python, SQL, React.js, Vue.js, Angular.js",
         },
         {
-            title: "Technologies:",
-            content: "AWS, Git, MongoDB, Selenium WebDriver, STOMP, NodeRED.",
-        },
-        {
-            title: "Methodologies:",
-            content: "Agile (SCRUM), Continuous Integration, Unified Modeling Language (UML), Business ProcessModel and Notation (BPMN).",
+            title: "Technologies",
+            content: "AWS CDK, CloudFormation, Lambda, EC2, S3, Git, SQS, SNS",
         },
     ],
 };

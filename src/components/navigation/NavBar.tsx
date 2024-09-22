@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './navBar.css';
-import { PageNames, PagePathMapping } from '../../App';
+import { PageNames } from '../../App';
 import { INavBarItemPage, NavBarItem } from './NavBarItem';
 import { NavbarItemWithDropDown } from './NavBarItemWithDropdown';
 

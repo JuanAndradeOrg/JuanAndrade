@@ -109,3 +109,12 @@ ul {
     font-weight: 500;
     font-style: italic;
 }
+
+.resume-section-key-points {
+    list-style-type: disc;
+    padding-bottom: 20px;
+    
+    li::marker {
+        color: #e0b27de7;
+    }
+}
