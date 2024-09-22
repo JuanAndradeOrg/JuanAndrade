@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './navBar.css';
-import { Link } from "react-router-dom";
 import { PageNames, PagePathMapping } from '../../App';
-
+import { INavBarItemPage, NavBarItem } from './NavBarItem';
+import { NavbarItemWithDropDown } from './NavBarItemWithDropdown';
 
 type INavBar = {
     activePageName: PageNames;
@@ -10,11 +10,26 @@ type INavBar = {
 
 export function NavBar(props: INavBar) {
     const { activePageName } = props;
+    const projectsNavBarDropdownOptions: INavBarItemPage[] = [
+        {page: PageNames.JOURNEY_TO_LIGHT, pageText: "Journey to light"},
+        {page: PageNames.GIFT, pageText: "Gift"}
+    ];
     return (
         <div className="nav-bar">
-            <Link className={activePageName === PageNames.RESUME ? 'nav-item item-active': 'nav-item'} replace to={PagePathMapping[PageNames.RESUME]}>Resume</Link>
-            <Link className={activePageName === PageNames.JOURNEY_TO_LIGHT ? 'nav-item item-active': 'nav-item'}  replace to={PagePathMapping[PageNames.JOURNEY_TO_LIGHT]}>Journey To Light</Link>
-            <Link className={activePageName === PageNames.GIFT ? 'nav-item item-active': 'nav-item'}  replace to={PagePathMapping[PageNames.GIFT]}>Gift</Link>
+            <NavBarItem 
+                navBarPage={
+                    ({
+                        page: PageNames.RESUME,
+                        pageText: "Resume",
+                    })
+                } 
+                activePageName={activePageName}
+            />
+            <NavbarItemWithDropDown
+                navBarItemText="Projects"
+                navBarItemPages={projectsNavBarDropdownOptions}
+                activePageName={activePageName}
+            />
         </div>
     );
 }
