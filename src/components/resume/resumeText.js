@@ -24,7 +24,7 @@ export const WorkExperience = {
         {   
             title: "Scotiabank",
             subTitle: "Full Stack Software Engineer Specialist.",
-            content: "Full Stack software development for the ScotiaHome product (Application that manages Scotiabank mortgages in Canada).",
+            content: "Full Stack software development for ScotiaHome (Application that manages Scotiabank mortgages in Canada).",
             finalDate: "Aug 2022",
             keyPoints: [
                 "Lead a project that simplified the process of verifying and selecting customer addresses in ScotiaHome. Only preverified and real addresses were shown to financial advisors.",
@@ -36,7 +36,6 @@ export const WorkExperience = {
             subTitle: "Associate Software Engineer",
             content: "Full stack software development for the Learn/Ultra product.",
             finalDate: "Apr 2021",
-            startDate: "Nov 2019",
             keyPoints: [
                 "Lead a project that improved the performance of Learn - Ultra course outline (page that shows the content of a course to students) by more than 30%.",
                 "Wrote several automated E2E tests for improving Ultra’s product resilience.",
@@ -147,7 +146,7 @@ export const Languages = {
 };
 
 export const AwardsConferences = {
-    title: "Awards and conferences",
+    title: "Awards",
     sectionItems: [
         {
             title: "Best Saber Pro 2018",
@@ -160,12 +159,6 @@ export const AwardsConferences = {
             subTitle: "Colombian School of Engineering Julio Garavito",
             content: "Trophy, application designed to create bets in real time for video games using Java and React.js.",
             finalDate: "May 2019",
-        },
-        {
-            title: "IX Information Security Seminar: Cybersecurity challenges",
-            subTitle: "Colombian School of Engineering Julio Garavito",
-            content: "Topic: Theft of credentials and information and how to defend yourself.",
-            finalDate: "Nov 2018",
         },
         {
             title: "First place in projects of Introduction to Computer Systems Engineering",

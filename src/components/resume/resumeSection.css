@@ -81,7 +81,7 @@ ul {
 
 .fake-date-background {
     top: 0;
-    background-color: #f7f7f7;
+    background-color: #fff;
     height: 9px;
     width: 10px;
 }
@@ -90,7 +90,7 @@ ul {
     position: absolute;
     bottom: -9px;
     right: -6px;
-    background-color: #f7f7f7;
+    background-color: #fff;
     height: 31px;
     width: 10px;
     z-index: 3;
@@ -116,5 +116,8 @@ ul {
     
     li::marker {
         color: #e0b27de7;
+    }
+    p {
+        margin : 4px;
     }
 }

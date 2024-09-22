@@ -6,10 +6,6 @@ import profilePicture from '../../utility/photo.jpg';
 import resumePDF from '../../utility/AndradeResume.pdf';
 import DownloadIcon from '@mui/icons-material/Download';
 import { IconButton } from '@mui/material';
-// import jsPDF from 'jspdf';
-// import html2canvas from 'html2canvas';
-import ReactDOMServer from "react-dom/server";
-import jsPDF from 'jspdf';
 import { savePDF } from '@progress/kendo-react-pdf';
 
 
@@ -23,19 +19,6 @@ export function Resume() {
             keepTogether:'#resume',
             scale: 0.444
         });
-        /* 
-            const input: HTMLElement = document.getElementById('resume')!;
-            html2canvas(input)
-              .then((canvas) => {
-                const imgData: string = canvas.toDataURL('image/png');
-                const pdf = new jsPDF();
-
-                var width = pdf.internal.pageSize.getWidth();
-                var height = pdf.internal.pageSize.getHeight();
-                pdf.addImage(imgData, 'PNG', 0, 0, width, height);
-                pdf.save("download.pdf");
-              });
-        */
     } 
 
     return (
@@ -53,7 +36,6 @@ export function Resume() {
             </div>
             <div className="resume-content">
                 <div className="general-column personal-column">
-                    <div className="fake-background"></div>
                     <div className="photo-container">
                         <img className="photo" src={profilePicture}  alt="main-profile" />
                     </div>

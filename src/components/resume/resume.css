@@ -6,7 +6,7 @@
     background-position: bottom center;
     margin-bottom: 30px;
     text-align: center;
-    color: #f7f7f7;
+    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,6 +43,8 @@
 @media only screen and (max-width: 800px) {
     .personal-column {
         background-color: #e0b27de7;
+        margin-top: 106px;
+        padding-top: 106px;
     }
 }
 
@@ -51,6 +53,8 @@
         min-width: 240px;
         background-color: #e0b27de7;
         margin-right: 20px;
+        margin-top: 106px;
+        padding-top: 106px;
     }
 }
 
@@ -70,27 +74,22 @@
     border-radius: 50%;
     margin-top: 16px;
     z-index: 2;
-}
-
-.fake-background {
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 106px;
-    width: 100%;
-    z-index: 1;
-    background-color: #f7f7f7;
+    top: -80px;
 }
 
 .main-title {
-    color: #f9f9f9;
+    color: #fff;
     margin-bottom: 30px;
 }
 
 .resume-sub-title {
-    color: #f9f9f9;
+    color: #fff;
     padding: 10px;
     border: 2px solid #da984de7;
+    h2 {
+        margin-right: 10px;
+    }
 }
 
 .download-button {
