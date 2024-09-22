@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/JuanAndrade/static/css/main.377aa10c.chunk.css",
-    "main.js": "/JuanAndrade/static/js/main.b96e273e.chunk.js",
-    "main.js.map": "/JuanAndrade/static/js/main.b96e273e.chunk.js.map",
-    "runtime-main.js": "/JuanAndrade/static/js/runtime-main.e0ab1645.js",
-    "runtime-main.js.map": "/JuanAndrade/static/js/runtime-main.e0ab1645.js.map",
-    "static/js/2.a1762982.chunk.js": "/JuanAndrade/static/js/2.a1762982.chunk.js",
-    "static/js/2.a1762982.chunk.js.map": "/JuanAndrade/static/js/2.a1762982.chunk.js.map",
-    "static/js/3.0d6d0b98.chunk.js": "/JuanAndrade/static/js/3.0d6d0b98.chunk.js",
-    "static/js/3.0d6d0b98.chunk.js.map": "/JuanAndrade/static/js/3.0d6d0b98.chunk.js.map",
-    "index.html": "/JuanAndrade/index.html",
-    "static/css/main.377aa10c.chunk.css.map": "/JuanAndrade/static/css/main.377aa10c.chunk.css.map",
-    "static/js/2.a1762982.chunk.js.LICENSE.txt": "/JuanAndrade/static/js/2.a1762982.chunk.js.LICENSE.txt",
-    "static/media/AndradeResume.57693a80.pdf": "/JuanAndrade/static/media/AndradeResume.57693a80.pdf",
-    "static/media/date-sticky.e38cbf18.png": "/JuanAndrade/static/media/date-sticky.e38cbf18.png",
-    "static/media/resume.css": "/JuanAndrade/static/media/landscape.b1c53eb1.png",
-    "static/media/photo.51420dd0.jpg": "/JuanAndrade/static/media/photo.51420dd0.jpg"
+    "main.css": "/static/css/main.573e473b.chunk.css",
+    "main.js": "/static/js/main.4b51b1ca.chunk.js",
+    "main.js.map": "/static/js/main.4b51b1ca.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e1e0379d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e1e0379d.js.map",
+    "static/js/2.a1762982.chunk.js": "/static/js/2.a1762982.chunk.js",
+    "static/js/2.a1762982.chunk.js.map": "/static/js/2.a1762982.chunk.js.map",
+    "static/js/3.0d6d0b98.chunk.js": "/static/js/3.0d6d0b98.chunk.js",
+    "static/js/3.0d6d0b98.chunk.js.map": "/static/js/3.0d6d0b98.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.573e473b.chunk.css.map": "/static/css/main.573e473b.chunk.css.map",
+    "static/js/2.a1762982.chunk.js.LICENSE.txt": "/static/js/2.a1762982.chunk.js.LICENSE.txt",
+    "static/media/AndradeResume.57693a80.pdf": "/static/media/AndradeResume.57693a80.pdf",
+    "static/media/date-sticky.e38cbf18.png": "/static/media/date-sticky.e38cbf18.png",
+    "static/media/resume.css": "/static/media/landscape.b1c53eb1.png",
+    "static/media/photo.51420dd0.jpg": "/static/media/photo.51420dd0.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e0ab1645.js",
+    "static/js/runtime-main.e1e0379d.js",
     "static/js/2.a1762982.chunk.js",
-    "static/css/main.377aa10c.chunk.css",
-    "static/js/main.b96e273e.chunk.js"
+    "static/css/main.573e473b.chunk.css",
+    "static/js/main.4b51b1ca.chunk.js"
   ]
 }
