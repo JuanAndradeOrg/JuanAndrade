@@ -87,9 +87,6 @@
     color: #fff;
     padding: 10px;
     border: 2px solid #da984de7;
-    h2 {
-        margin-right: 10px;
-    }
 }
 
 .download-button {
@@ -103,3 +100,12 @@
     border-radius: 4px;
     z-index: 1;
 }
+
+.floating-resume {
+    margin: 40px;
+    box-shadow: 0px 2px 8px 6px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 2px 8px 6px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 2px 8px 6px rgba(0,0,0,0.1);
+    background-color: #fff;
+    position: relative;
+  }

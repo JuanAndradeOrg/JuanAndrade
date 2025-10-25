@@ -1,9 +1,6 @@
 export const Summary = {
     title: "Summary",
-    mainText: "Full stack software Engineer with +5 years of experience building large-scale, highly-available, distributed software systems in the cloud. "
-    + "Proficiency in FrontEnd and BackEnd technologies such as Java, Javascript, SQL, React.js, Angular.js, Vue.js, and Python. "
-    + "Experience designing, scoping, and implementing new product features and integrations resulting in reliable software products. "
-    + "Well-versed in service-oriented architecture, software development life cycle (SDLC), continuous integration and deployment (CI/CD) pipelines, and operational best practices."
+    mainText: "Software engineer with 6+ years of experience building scalable, high-availability systems in cloud environments. Skilled in full-stack development (Java, JavaScript, React.js, SQL) and AWS cloud (CDK/Terraform, Lambda, S3). Experienced in designing, launching, and optimizing products used by millions, with expertise in distributed systems, CI/CD, and agile practices."
 };
 
 export const WorkExperience = {
@@ -56,6 +53,12 @@ export const WorkExperience = {
 export const Education = {
     title: "Education",
     sectionItems: [
+        
+        {
+            title: "Master of Science, Computer Science",
+            content: "Georgia Institute of Technology",
+            finalDate: "May 2027",
+        },
         {
             title: "Bachelor of Computer Systems Engineering",
             content: "Colombian School of Engineering Julio Garavito",

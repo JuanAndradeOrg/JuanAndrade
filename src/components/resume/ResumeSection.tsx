@@ -3,19 +3,19 @@ import './resumeSection.css';
 import stickyDate from '../../utility/date-sticky.png';
 
 type IResumeSection = {
-    title: String;
-    mainText?: String;
+    title: string;
+    mainText?: string;
     sectionItems?: Array<IResumeSectionItem>;
 }
 
 type IResumeSectionItem = {
-    title?: String;
-    subTitle?: String;
-    content?: String;
-    finalDate?: String;
-    startDate?: String;
-    subItems?: Array<String>;
-    keyPoints?: Array<String>;
+    title?: string;
+    subTitle?: string;
+    content?: string;
+    finalDate?: string;
+    startDate?: string;
+    subItems?: Array<string>;
+    keyPoints?: Array<string>;
 }
 
 export function ResumeSection(props: IResumeSection) {

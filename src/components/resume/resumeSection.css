@@ -54,13 +54,15 @@ ul {
     align-items: center;
     height: 100%;
     width: 100%;
+    align-items: center;
 }
 
 .date-text {
     font-size: 14px;
     font-weight: 600;
     color: #100c35;
-    margin: 0 0 0 6px;
+    margin: 0;
+    margin-left: 4px;
 }
 
 .start-date {

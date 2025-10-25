@@ -44,8 +44,9 @@
     justify-content:space-between;
     flex-direction: column;
     position: absolute;
-    top: 79px;
+    top: 69px;
     width: 100%;
+    padding-top: 10px;
 }
 
 .navbar-dropdown-option {
@@ -79,4 +80,8 @@
     a {
         color: #e0b27de7;
     }
+}
+
+.hide-dropdown {
+    visibility: hidden;
 }

@@ -18,36 +18,40 @@ export const PagePathMapping: Record<PageNames, string> = {
 };
 
 const ResumePage = () => (
-  <div className="floating-resume">
     <Resume />
-  </div>
 );
 
 const JourneyToLightPage = () => (
-  <UnityPlayer projectName="journey" isVisible />
+  <UnityPlayer projectName="journey" />
 );
 
 const GiftPage = () => (
-  <UnityPlayer projectName="rabbit" isVisible />
+  <UnityPlayer projectName="rabbit" />
 );
 
 const PageWithNavBar = (pageName: PageNames, PageComponent: React.ComponentType) => {
   return (props: any) => (
       <>
         <NavBar activePageName={pageName} />
-        <PageComponent {...props} />
+        <div className="page-content">
+          <PageComponent {...props}/>
+        </div>
       </>
     )
 }
+
+const ResumePageWithNav = PageWithNavBar(PageNames.RESUME, ResumePage);
+const JourneyToLightPageWithNav = PageWithNavBar(PageNames.JOURNEY_TO_LIGHT, JourneyToLightPage);
+const GiftPageWithNav = PageWithNavBar(PageNames.GIFT, GiftPage);
 
 function App() {
   return (
     <div className="App">
       <Router basename={process.env.PUBLIC_URL}>
         <Switch>
-          <Route exact path={PagePathMapping[PageNames.RESUME]} component={PageWithNavBar(PageNames.RESUME, ResumePage)}/>
-          <Route exact path={PagePathMapping[PageNames.JOURNEY_TO_LIGHT]} component={PageWithNavBar(PageNames.JOURNEY_TO_LIGHT, JourneyToLightPage)}/>
-          <Route exact path={PagePathMapping[PageNames.GIFT]} component={PageWithNavBar(PageNames.GIFT, GiftPage)}/>
+          <Route exact path={PagePathMapping[PageNames.RESUME]} component={ResumePageWithNav}/>
+          <Route exact path={PagePathMapping[PageNames.JOURNEY_TO_LIGHT]} component={JourneyToLightPageWithNav}/>
+          <Route exact path={PagePathMapping[PageNames.GIFT]} component={GiftPageWithNav}/>
         </Switch>
       </Router>
     </div>

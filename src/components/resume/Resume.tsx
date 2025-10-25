@@ -6,23 +6,13 @@ import profilePicture from '../../utility/photo.jpg';
 import resumePDF from '../../utility/AndradeResume.pdf';
 import DownloadIcon from '@mui/icons-material/Download';
 import { IconButton } from '@mui/material';
-import { savePDF } from '@progress/kendo-react-pdf';
 
 
 export function Resume() {
     const resumeRef: any = React.createRef();
 
-    const generatePDF = () => {
-        savePDF(resumeRef.current, { 
-            paperSize: 'A4',
-            fileName: 'AndradeResume.pdf',
-            keepTogether:'#resume',
-            scale: 0.444
-        });
-    } 
-
     return (
-        <div  id="resume" ref={resumeRef}>
+        <div  id="resume" ref={resumeRef} className="floating-resume">
             <div className="resume-intro">
                 <h1 className="main-title">JUAN JOSE ANDRADE PARDO</h1>
                 <div className="resume-sub-title">
