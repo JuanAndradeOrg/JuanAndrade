@@ -8,13 +8,15 @@ import { UnityPlayer } from './components/unity/UnityPlayer';
 export enum PageNames {
   RESUME = "Resume",
   GIFT = "Gift",
-  JOURNEY_TO_LIGHT = "JourneyToLight"
+  JOURNEY_TO_LIGHT = "JourneyToLight",
+  RELICS_OF_THE_FALLEN = "RelicsOfTheFallen",
 }
 
 export const PagePathMapping: Record<PageNames, string> = {
   [PageNames.RESUME] : "/",
   [PageNames.GIFT] : "/gift",
   [PageNames.JOURNEY_TO_LIGHT] : "/journey-to-light",
+  [PageNames.RELICS_OF_THE_FALLEN] : "/relics-of-the-fallen",
 };
 
 const ResumePage = () => (
@@ -28,6 +30,11 @@ const JourneyToLightPage = () => (
 const GiftPage = () => (
   <UnityPlayer projectName="rabbit" />
 );
+
+const RelicsOfTheFallenPage = () => (
+  <UnityPlayer projectName="relics" />
+);
+
 
 const PageWithNavBar = (pageName: PageNames, PageComponent: React.ComponentType) => {
   return (props: any) => (
@@ -43,6 +50,7 @@ const PageWithNavBar = (pageName: PageNames, PageComponent: React.ComponentType)
 const ResumePageWithNav = PageWithNavBar(PageNames.RESUME, ResumePage);
 const JourneyToLightPageWithNav = PageWithNavBar(PageNames.JOURNEY_TO_LIGHT, JourneyToLightPage);
 const GiftPageWithNav = PageWithNavBar(PageNames.GIFT, GiftPage);
+const RelicsPageWithNav = PageWithNavBar(PageNames.RELICS_OF_THE_FALLEN, RelicsOfTheFallenPage);
 
 function App() {
   return (
@@ -52,6 +60,7 @@ function App() {
           <Route exact path={PagePathMapping[PageNames.RESUME]} component={ResumePageWithNav}/>
           <Route exact path={PagePathMapping[PageNames.JOURNEY_TO_LIGHT]} component={JourneyToLightPageWithNav}/>
           <Route exact path={PagePathMapping[PageNames.GIFT]} component={GiftPageWithNav}/>
+          <Route exact path={PagePathMapping[PageNames.RELICS_OF_THE_FALLEN]} component={RelicsPageWithNav}/>
         </Switch>
       </Router>
     </div>

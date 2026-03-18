@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { PageNames, PagePathMapping } from "../../App";
 import './navBar.css';
 import { RedirectionLink } from "../redirectionLink/RedirectionLink";
