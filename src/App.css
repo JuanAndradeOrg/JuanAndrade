@@ -32,3 +32,7 @@ h3, h4 {
   align-items: center;
 }
 
+.dark-background {
+  background-color: black;
+}
+

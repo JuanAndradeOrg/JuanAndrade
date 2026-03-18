@@ -1,8 +1,7 @@
 .unity-container {
     max-width: calc((100vh - 160px) * 2);
-    max-height: calc(100vh - 160px);
+    height: 100%;
     flex: 1;
-    margin: 40px;
     position: relative;
     display: flex;
     justify-content: center;

@@ -11,7 +11,7 @@ type INavBar = {
 export function NavBar(props: INavBar) {
     const { activePageName } = props;
     const projectsNavBarDropdownOptions: INavBarItemPage[] = [
-        {page: PageNames.RELICS_OF_THE_FALLEN, pageText: "Rellics of the fallen"},
+        {page: PageNames.RELICS_OF_THE_FALLEN, pageText: "Relics of the Fallen"},
         {page: PageNames.JOURNEY_TO_LIGHT, pageText: "Journey to light"},
         {page: PageNames.GIFT, pageText: "Gift"}
     ];

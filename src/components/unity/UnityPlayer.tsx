@@ -1,37 +1,26 @@
 import React from 'react';
-import Unity, { UnityContent } from "react-unity-webgl";
+import { Unity, useUnityContext } from "react-unity-webgl";
 import './unityPlayer.css';
+import { AppLoader } from '../loader/AppLoader';
 
-type IUnityPlayerState = {
-    unityContent: any;
-  }
-  
 type IUnityPlayer = {
-    projectName: string;
+  projectName: string;
 }
 
-export class UnityPlayer extends React.PureComponent<IUnityPlayer, IUnityPlayerState> {
-  constructor(props: IUnityPlayer) {
-      super(props);
-      const { projectName } = this.props;
-      this.state = {
-        unityContent: new UnityContent(
-          projectName + "/web.json",
-          projectName + "/UnityLoader.js"
-        ), 
-      }
-      console.log(projectName + "/web.json");
-  }
+export const UnityPlayer: React.FC<IUnityPlayer> = ({ projectName }) => {
+  const { unityProvider, isLoaded } = useUnityContext({
+    loaderUrl: `${projectName}/WebBuild.loader.js`,
+    dataUrl: `${projectName}/WebBuild.data`,
+    frameworkUrl: `${projectName}/WebBuild.framework.js`,
+    codeUrl: `${projectName}/WebBuild.wasm`,
+  });
 
-
-  render() {
-    const { unityContent } = this.state;
-    
-    return (
-      <div className="unity-container">
-        <Unity unityContent={unityContent} />
-      </div>
-    );
-  }
-}
-
+  return (
+    <div className="unity-container">
+      {!isLoaded && (
+        <AppLoader/>
+      )}
+      <Unity unityProvider={unityProvider} style={{ width: "100%", height: "100%" }} />
+    </div>
+  );
+};

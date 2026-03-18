@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { PagePathMapping } from "../../App";
 import { INavBarItemPage } from "./NavBarItem";
 import './navBar.css';

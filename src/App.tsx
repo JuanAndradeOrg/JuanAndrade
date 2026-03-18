@@ -4,6 +4,8 @@ import { Resume } from './components/resume/Resume';
 import { NavBar } from './components/navigation/NavBar';
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import { UnityPlayer } from './components/unity/UnityPlayer';
+import { LegacyUnityPlayer } from './components/unity/LegacyUnityPlayer';
+import { ExternalGamePlayer } from './components/unity/ExternalGamePlayer';
 
 export enum PageNames {
   RESUME = "Resume",
@@ -24,23 +26,23 @@ const ResumePage = () => (
 );
 
 const JourneyToLightPage = () => (
-  <UnityPlayer projectName="journey" />
+  <LegacyUnityPlayer projectName="journey" />
 );
 
 const GiftPage = () => (
-  <UnityPlayer projectName="rabbit" />
+  <LegacyUnityPlayer projectName="rabbit" />
 );
 
 const RelicsOfTheFallenPage = () => (
-  <UnityPlayer projectName="relics" />
+  <ExternalGamePlayer gameUrl="https://itch.io/embed-upload/16850290?color=333333" />
 );
 
 
-const PageWithNavBar = (pageName: PageNames, PageComponent: React.ComponentType) => {
+const PageWithNavBar = (pageName: PageNames, PageComponent: React.ComponentType, darkVariant?: boolean) => {
   return (props: any) => (
       <>
         <NavBar activePageName={pageName} />
-        <div className="page-content">
+        <div className={darkVariant ? "page-content dark-background": "page-content"}>
           <PageComponent {...props}/>
         </div>
       </>
@@ -48,9 +50,9 @@ const PageWithNavBar = (pageName: PageNames, PageComponent: React.ComponentType)
 }
 
 const ResumePageWithNav = PageWithNavBar(PageNames.RESUME, ResumePage);
-const JourneyToLightPageWithNav = PageWithNavBar(PageNames.JOURNEY_TO_LIGHT, JourneyToLightPage);
-const GiftPageWithNav = PageWithNavBar(PageNames.GIFT, GiftPage);
-const RelicsPageWithNav = PageWithNavBar(PageNames.RELICS_OF_THE_FALLEN, RelicsOfTheFallenPage);
+const JourneyToLightPageWithNav = PageWithNavBar(PageNames.JOURNEY_TO_LIGHT, JourneyToLightPage, true);
+const GiftPageWithNav = PageWithNavBar(PageNames.GIFT, GiftPage, true);
+const RelicsPageWithNav = PageWithNavBar(PageNames.RELICS_OF_THE_FALLEN, RelicsOfTheFallenPage, true);
 
 function App() {
   return (
