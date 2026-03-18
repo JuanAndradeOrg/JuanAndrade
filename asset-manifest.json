@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/JuanAndrade/static/css/main.fd8320fd.chunk.css",
-    "main.js": "/JuanAndrade/static/js/main.fd2afb67.chunk.js",
-    "main.js.map": "/JuanAndrade/static/js/main.fd2afb67.chunk.js.map",
-    "runtime-main.js": "/JuanAndrade/static/js/runtime-main.01da24bb.js",
-    "runtime-main.js.map": "/JuanAndrade/static/js/runtime-main.01da24bb.js.map",
-    "static/js/2.18d6afca.chunk.js": "/JuanAndrade/static/js/2.18d6afca.chunk.js",
-    "static/js/2.18d6afca.chunk.js.map": "/JuanAndrade/static/js/2.18d6afca.chunk.js.map",
-    "static/js/3.fddfa5a5.chunk.js": "/JuanAndrade/static/js/3.fddfa5a5.chunk.js",
-    "static/js/3.fddfa5a5.chunk.js.map": "/JuanAndrade/static/js/3.fddfa5a5.chunk.js.map",
+    "main.css": "/JuanAndrade/static/css/main.ed385b1a.chunk.css",
+    "main.js": "/JuanAndrade/static/js/main.c3b3650a.chunk.js",
+    "main.js.map": "/JuanAndrade/static/js/main.c3b3650a.chunk.js.map",
+    "runtime-main.js": "/JuanAndrade/static/js/runtime-main.c29b9a89.js",
+    "runtime-main.js.map": "/JuanAndrade/static/js/runtime-main.c29b9a89.js.map",
+    "static/js/2.dfcdf9cc.chunk.js": "/JuanAndrade/static/js/2.dfcdf9cc.chunk.js",
+    "static/js/2.dfcdf9cc.chunk.js.map": "/JuanAndrade/static/js/2.dfcdf9cc.chunk.js.map",
+    "static/js/3.1fe134b8.chunk.js": "/JuanAndrade/static/js/3.1fe134b8.chunk.js",
+    "static/js/3.1fe134b8.chunk.js.map": "/JuanAndrade/static/js/3.1fe134b8.chunk.js.map",
     "index.html": "/JuanAndrade/index.html",
-    "static/css/main.fd8320fd.chunk.css.map": "/JuanAndrade/static/css/main.fd8320fd.chunk.css.map",
-    "static/js/2.18d6afca.chunk.js.LICENSE.txt": "/JuanAndrade/static/js/2.18d6afca.chunk.js.LICENSE.txt",
-    "static/media/AndradeResume.885ffdfc.pdf": "/JuanAndrade/static/media/AndradeResume.885ffdfc.pdf",
+    "static/css/main.ed385b1a.chunk.css.map": "/JuanAndrade/static/css/main.ed385b1a.chunk.css.map",
+    "static/js/2.dfcdf9cc.chunk.js.LICENSE.txt": "/JuanAndrade/static/js/2.dfcdf9cc.chunk.js.LICENSE.txt",
+    "static/media/AndradeResume.2a49b7a7.pdf": "/JuanAndrade/static/media/AndradeResume.2a49b7a7.pdf",
     "static/media/date-sticky.e38cbf18.png": "/JuanAndrade/static/media/date-sticky.e38cbf18.png",
     "static/media/resume.css": "/JuanAndrade/static/media/landscape.b1c53eb1.png",
     "static/media/photo.51420dd0.jpg": "/JuanAndrade/static/media/photo.51420dd0.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.01da24bb.js",
-    "static/js/2.18d6afca.chunk.js",
-    "static/css/main.fd8320fd.chunk.css",
-    "static/js/main.fd2afb67.chunk.js"
+    "static/js/runtime-main.c29b9a89.js",
+    "static/js/2.dfcdf9cc.chunk.js",
+    "static/css/main.ed385b1a.chunk.css",
+    "static/js/main.c3b3650a.chunk.js"
   ]
 }
